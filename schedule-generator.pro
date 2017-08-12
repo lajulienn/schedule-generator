@@ -33,3 +33,6 @@ HEADERS += \
 
 FORMS += \
         schedule-generator.ui
+
+RESOURCES += \
+    resource.qrc

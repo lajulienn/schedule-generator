@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/add.png</file>
+        <file>img/check.png</file>
+        <file>img/edit.png</file>
+        <file>img/generate.png</file>
+        <file>img/background.png</file>
+    </qresource>
+</RCC>

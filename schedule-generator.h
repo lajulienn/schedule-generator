@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "add-form.h"
+
 namespace Ui {
   class ScheduleGenerator;
 }
@@ -18,8 +20,11 @@ public:
 private slots:
 
 
+  void on_action_add_triggered();
+
 private:
   Ui::ScheduleGenerator *ui;
+  AddForm *add_form;
 };
 
 #endif // SCHEDULEGENERATOR_H

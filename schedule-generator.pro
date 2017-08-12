@@ -25,14 +25,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        schedule-generator.cpp
+        schedule-generator.cpp \
+    add-form.cpp
 
 HEADERS += \
         schedule-generator.h \
-    config.h
+    config.h \
+    add-form.h
 
 FORMS += \
-        schedule-generator.ui
+        schedule-generator.ui \
+    add-form.ui
 
 RESOURCES += \
     resource.qrc

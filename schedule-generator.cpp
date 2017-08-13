@@ -21,8 +21,14 @@ ScheduleGenerator::~ScheduleGenerator() {
 
 void ScheduleGenerator::on_action_add_triggered()
 {
-    add_form = new AddForm(centralWidget());
-    ui->gridLayout_centralWidget->addWidget(add_form);
-    //add_form->setStyleSheet("background-color: white");
-    add_form->show();
+  // working delete
+//  for (auto &child : this->centralWidget()->findChildren<QWidget *>()) {
+//    child->hide();
+//  }
+
+  /*
+   * Opening a dialog to add new person.
+   */
+  dialog_add = new DialogAdd(this);
+  dialog_add->show();
 }

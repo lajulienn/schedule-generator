@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AddForm</class>
- <widget class="QWidget" name="AddForm">
+ <class>StudentOrTeacherForm</class>
+ <widget class="QWidget" name="StudentOrTeacherForm">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>517</width>
+    <height>374</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <property name="autoFillBackground">
-   <bool>true</bool>
-  </property>
-  <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255)</string>
-  </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
-    <widget class="QGroupBox" name="groupBox_new">
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255)</string>
-     </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
      <property name="title">
       <string>Новый...</string>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QRadioButton" name="radioButton_student">
         <property name="text">
@@ -44,12 +35,9 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_ok">
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
+       <widget class="QPushButton" name="pushButton_forward">
         <property name="text">
-         <string>ОК</string>
+         <string>Далее</string>
         </property>
        </widget>
       </item>

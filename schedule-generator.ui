@@ -23,7 +23,73 @@
    <property name="autoFillBackground">
     <bool>false</bool>
    </property>
-   <layout class="QGridLayout" name="gridLayout_centralWidget"/>
+   <layout class="QGridLayout" name="gridLayout_centralWidget">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>1677721</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Сгенерировать расписание</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/img/generate.png</normaloff>:/img/generate.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>1677721</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Проверить данные</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/img/check.png</normaloff>:/img/check.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -44,10 +110,6 @@
     <addaction name="action_add"/>
     <addaction name="separator"/>
     <addaction name="action_edit"/>
-    <addaction name="separator"/>
-    <addaction name="action_check"/>
-    <addaction name="separator"/>
-    <addaction name="action_generate"/>
    </widget>
    <addaction name="menu"/>
   </widget>
@@ -74,12 +136,11 @@
    <addaction name="action_add"/>
    <addaction name="separator"/>
    <addaction name="action_edit"/>
-   <addaction name="separator"/>
-   <addaction name="action_check"/>
-   <addaction name="separator"/>
-   <addaction name="action_generate"/>
   </widget>
   <action name="action_add">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
     <iconset resource="resource.qrc">
      <normaloff>:/img/add.png</normaloff>:/img/add.png</iconset>
@@ -95,24 +156,6 @@
    </property>
    <property name="text">
     <string>Редактировать</string>
-   </property>
-  </action>
-  <action name="action_check">
-   <property name="icon">
-    <iconset resource="resource.qrc">
-     <normaloff>:/img/check.png</normaloff>:/img/check.png</iconset>
-   </property>
-   <property name="text">
-    <string>Проверить исходные данные</string>
-   </property>
-  </action>
-  <action name="action_generate">
-   <property name="icon">
-    <iconset resource="resource.qrc">
-     <normaloff>:/img/generate.png</normaloff>:/img/generate.png</iconset>
-   </property>
-   <property name="text">
-    <string>Сгенерировать расписание</string>
    </property>
   </action>
  </widget>

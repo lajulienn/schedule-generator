@@ -9,8 +9,7 @@ namespace Ui {
   class ScheduleGenerator;
 }
 
-class ScheduleGenerator : public QMainWindow
-{
+class ScheduleGenerator : public QMainWindow {
   Q_OBJECT
 
 public:

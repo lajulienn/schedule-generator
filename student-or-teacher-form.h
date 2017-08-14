@@ -9,8 +9,7 @@ namespace Ui {
   class StudentOrTeacherForm;
 }
 
-class StudentOrTeacherForm : public QWidget
-{
+class StudentOrTeacherForm : public QWidget {
   Q_OBJECT
 
 public:

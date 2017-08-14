@@ -41,7 +41,7 @@ FORMS += \
         schedule-generator.ui \
     student-or-teacher-form.ui \
     dialog-add.ui \
-    raw-addform.ui
+    raw-add-form.ui
 
 RESOURCES += \
     resource.qrc

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AddTeacherForm</class>
- <widget class="QWidget" name="AddTeacherForm">
+ <class>RawAddForm</class>
+ <widget class="QWidget" name="RawAddForm">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -38,9 +38,6 @@
      </item>
     </layout>
    </item>
-   <item row="0" column="1" rowspan="3">
-    <layout class="QFormLayout" name="formLayout_time"/>
-   </item>
    <item row="1" column="0">
     <layout class="QFormLayout" name="formLayout_subject">
      <property name="sizeConstraint">
@@ -70,6 +67,13 @@
       <string>Готово</string>
      </property>
     </widget>
+   </item>
+   <item row="0" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout_time">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+    </layout>
    </item>
   </layout>
  </widget>

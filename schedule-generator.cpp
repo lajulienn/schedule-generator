@@ -19,8 +19,7 @@ ScheduleGenerator::~ScheduleGenerator() {
 }
 
 
-void ScheduleGenerator::on_action_add_triggered()
-{
+void ScheduleGenerator::on_action_add_triggered() {
   // working delete
 //  for (auto &child : this->centralWidget()->findChildren<QWidget *>()) {
 //    child->hide();

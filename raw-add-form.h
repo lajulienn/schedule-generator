@@ -17,7 +17,7 @@ public:
   ~RawAddForm();
 
 private slots:
-  void on_pushButton_clicked();
+  void on_pushButton_ready_clicked();
 
 private:
   Ui::RawAddForm *ui;

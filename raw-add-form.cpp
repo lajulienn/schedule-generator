@@ -38,16 +38,14 @@ RawAddForm::~RawAddForm() {
   delete ui;
 }
 
-void RawAddForm::on_pushButton_clicked()
-{
-    if (isStudent_ && ui->comboBox_subject->currentText() == "Математика") {
-      int answer = QMessageBox::question(this, "Математика",
-                                                                 "Какой уровень математики выбрать?",
-                                                                 "Базовый", "Профильный");
-      if (answer == 0) {
-        QMessageBox::information(this, "", "База");
-      } else if (answer == 1) {
-        QMessageBox::information(this, "", "Профиль");
-      }
+void RawAddForm::on_pushButton_ready_clicked() {
+  if (isStudent_ && ui->comboBox_subject->currentText() == "Математика") {
+    int answer = QMessageBox::question(this, "Математика", "Какой уровень математики выбрать?", "Базовый", "Профильный");
+
+    if (answer == 0) {
+      QMessageBox::information(this, "", "База");
+    } else if (answer == 1) {
+      QMessageBox::information(this, "", "Профиль");
     }
+  }
 }
